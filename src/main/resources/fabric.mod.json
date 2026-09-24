@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "seed_map",
+  "version": "${version}",
+  "name": "Seed Map",
+  "description": "In-game structure map driven by the current world seed.",
+  "authors": ["Seed Map"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["dev.seedmap.SeedMapClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
