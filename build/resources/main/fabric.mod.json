@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "seed_map",
+  "id": "world_seed_map",
   "version": "0.1.0",
-  "name": "Seed Map",
+  "name": "World Seed Map",
   "description": "In-game structure map driven by the current world seed.",
-  "authors": ["Seed Map"],
+  "authors": ["World Seed Map"],
   "contact": {},
   "license": "MIT",
   "environment": "client",
