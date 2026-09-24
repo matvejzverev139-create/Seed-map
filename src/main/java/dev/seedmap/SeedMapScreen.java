@@ -111,7 +111,7 @@ public final class SeedMapScreen extends Screen {
 
     @Override
     public void close() {
-        client.setScreen(parent);
+        client.setScreen(parent != null ? parent : null);
     }
 
     private enum WorldDimension {

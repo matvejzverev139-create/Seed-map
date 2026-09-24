@@ -26,6 +26,13 @@ public final class SeedMapClient implements ClientModInitializer {
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (openMapKey.wasPressed()) {
+                if (client.currentScreen instanceof SeedMapScreen) {
+                    client.setScreen(null);
+                    break;
+                }
+                if (client.world == null || client.player == null) {
+                    break;
+                }
                 client.setScreen(new SeedMapScreen(client.currentScreen));
             }
             updateSeedFromIntegratedServer(client);
